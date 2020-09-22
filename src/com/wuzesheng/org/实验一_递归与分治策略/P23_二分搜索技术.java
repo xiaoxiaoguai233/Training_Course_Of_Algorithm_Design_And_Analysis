@@ -1,5 +1,7 @@
 package com.wuzesheng.org.实验一_递归与分治策略;
 
+import java.util.Arrays;
+
 /**
  * @author 吴泽胜
  * @FileName P23_二分搜索技术
@@ -12,6 +14,7 @@ public class P23_二分搜索技术 {
     public static void main(String[] args){
 
         int[] arr = {5,45,87,3,45,954,546,78,465,478};
+        Arrays.sort(arr);
         System.out.println(binarySeachch(arr,465,arr.length));
     }
 
