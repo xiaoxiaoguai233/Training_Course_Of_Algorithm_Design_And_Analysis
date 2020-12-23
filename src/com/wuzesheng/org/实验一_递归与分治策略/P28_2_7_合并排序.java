@@ -19,7 +19,7 @@ public class P28_2_7_合并排序 {
 
     private static void mergeSort(int[] original) {
         if (original == null) {
-            throw new NullPointerException("The array can not be null !!!");
+            throw new NullPointerException("");
         }
         int length = original.length;
         if (length > 1) {
@@ -33,6 +33,7 @@ public class P28_2_7_合并排序 {
         }
     }
 
+    // 排序
     private static void sort(int[] partitionA, int[] partitionB, int[] original) {
         int i = 0;
         int j = 0;
@@ -62,9 +63,10 @@ public class P28_2_7_合并排序 {
         }
     }
 
+    // 打印数组
     private static void print(int[] array) {
         if (array == null) {
-            throw new NullPointerException("The array can not be null !!!");
+            throw new NullPointerException("");
         }
         StringBuilder sb = new StringBuilder("[");
         for (int element : array) {
